@@ -1,0 +1,48 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 350px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.draggable {
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  font-size: 16px;
+}
+
+.draggable:hover {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: grab;
+}
+
+.draggable::before {
+  content: "=";
+  margin-right: 30px;
+  font-size: 18px;
+  color: #888;
+}
+
+.draggable.dragging {
+  opacity: 0.9;
+  border: 2px dashed #007bff;
+  background-color: #e7f3ff;
+}
+
+.draggable + .placeholder {
+  height: 48px;
+  border: 2px dashed #007bff;
+  background: #f0f8ff;
+  border-radius: 5px;
+}
