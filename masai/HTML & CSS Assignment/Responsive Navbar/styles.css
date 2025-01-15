@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    justify-content: space-between;
+    padding: 20px 20px 20px 150px;
+    background-color: white;
+    border-bottom: 1px solid #e0e0e0;
+    position: relative;
+    overflow: visible;
+  }
+  
+  .navbar img {
+    height: 30px;
+  }
+  
+  .navbar .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar .logo img {
+    margin-right: 10px;
+  }
+  
+  .navbar .menu {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar .menu a {
+    text-decoration: none;
+    color: black;
+    margin: 0 15px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .navbar .menu .new {
+    background-color: #f8e1e1;
+    color: #ff4d4d;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-size: 10px;
+    margin-left: 5px;
+  }
+  
+  .navbar .menu .courses {
+    background-color: #e0e7ff;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .navbar .menu .register {
+    background-color: #ff4d4d;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 80;
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .dropdown a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+  }
+  
+  .dropdown a:hover {
+    background-color: #e0e7ff;
+  }
+  
+  .courses:hover .dropdown,
+  .dropdown:hover {
+    display: block; 
+  }
+  

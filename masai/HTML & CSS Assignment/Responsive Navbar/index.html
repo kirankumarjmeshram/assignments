@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navigation Bar</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="navbar">
+    <div class="logo">
+      <img alt="Masai logo" src="https://cdn.masaischool.com/masai-website/Masai_Logo_dark_web_b21aab8c62.webp">
+      <div class="courses" onclick="toggleDropdownClick()">
+        COURSES ▼
+        <div class="dropdown" id="dropdown">
+          <a href="#">Software Development</a>
+          <a href="#">Data Science</a>
+          <a href="#">Digital Marketing</a>
+          <a href="#">Business Analytics</a>
+        </div>
+      </div>
+    </div>
+    <div class="menu">
+      <a href="#">INTERVIEW GUIDES <span class="new">NEW</span></a>
+      <a href="#">SUCCESS STORIES</a>
+      <a href="#">HIRE FROM US</a>
+      <a href="#">FEES</a>
+      <a class="register" href="#">REGISTER</a>
+    </div>
+  </div>
+</body>
+</html>
