@@ -1,70 +1,43 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## **QuoteSage – A Daily Quote Generator**
 
-## Available Scripts
+### 🧠 **Objective**
 
-In the project directory, you can run:
+Build a React-based web app that displays motivational quotes to the user. Users can:
 
-### `npm start`
+* View a random quote
+* Refresh to see a new one
+* See the author's name
+* Customize quote font size and theme color (props)
+* Simulate local state changes (like "like" or "favorite" a quote)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 📘 **Topics Covered**
 
-### `npm test`
+| React Topic                           | How It’s Covered                                                                                                                       |
+| ------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| **JSX & Babel**                 | You will write UI using JSX syntax (React without HTML templates), rendered by Babel in dev setup.                                      |
+| **Components & Props**          | Break UI into multiple reusable components like `QuoteCard`, `ThemeToggle`, and `QuoteButton`, passing props for styling or data. |
+| **useState & State Management** | Use `useState` to handle quote data, theme changes, and UI toggles like font size.                                                    |
+| **APIs & Axios**                | Fetch quotes from an external API (e.g.,`https://zenquotes.io/api/random`) using Axios and display the results.                       |
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+### 🧩 **Feature Requirements**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. **Home Page Layout**
+   * Display a single quote (content + author)
+   * Button to fetch a new quote
+   * Like button (changes icon state locally)
+   * Optional: Dropdown to change font size
+2. **Theme Toggle**
+   * Light/Dark mode button (via props)
+   * Colors and styles passed as props to components
+3. **API Integration**
+   * Use Axios to call `https://zenquotes.io/api/random`
+   * On each "New Quote" click, fetch and display a new quote
+4. **Component Design**
+   * `QuoteCard`: Accepts quote, author, font size, and theme color as props
+   * `ThemeToggle`: Button to toggle color theme
+   * `QuoteButton`: A styled reusable button component
