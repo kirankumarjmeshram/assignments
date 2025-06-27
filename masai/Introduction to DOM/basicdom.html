@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DOM Add Item Example</title>
+  <style>
+    /* Optional base styling */
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    button {
+      margin-top: 10px;
+      padding: 8px 12px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>My List</h2>
+  <ul id="item-list">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+  </ul>
+
+  <button id="add-button">Add Item</button>
+
+  <script>
+    const ul = document.querySelector('#item-list');
+    const button = document.getElementById('add-button');
+
+    button.addEventListener('click', () => {
+      const newLi = document.createElement('li');
+      const currentCount = ul.children.length + 1;
+      newLi.textContent = 'New Item';
+
+      // Apply styling based on sequence number
+      if (currentCount % 2 !== 0) {
+        newLi.style.color = 'blue';
+        newLi.style.fontWeight = 'bold';
+      } else {
+        newLi.style.color = 'red';
+        newLi.style.fontStyle = 'italic';
+      }
+
+      ul.appendChild(newLi);
+    });
+  </script>
+
+</body>
+</html>
