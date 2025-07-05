@@ -1,5 +1,6 @@
 import './App.css';
 import ControlledForm from './components/ControlledForm';
+import UncontrolledForm from './components/UncontrolledForm';
 
 function App() {
   return (
@@ -13,8 +14,9 @@ function App() {
      <hr/>
      <div>
       <h1>
-        Controlled Form Basics
+        Uncontrolled Form Fundamentals
       </h1>
+      <UncontrolledForm/>
      </div>
      <hr/>
      <div>
