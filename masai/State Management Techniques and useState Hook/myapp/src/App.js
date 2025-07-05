@@ -2,6 +2,7 @@ import './App.css';
 import Counter from './components/Counter';
 import TaskManager from './components/TaskManager';
 import Todo from './components/Todo';
+import TodoList from './components/TodoList';
 
 function App() {
   return (
@@ -29,9 +30,9 @@ function App() {
             <hr/>
       <div>
         <h1>
-          Advanced Task Manager with Prioritization
+          Basic Todo List App
         </h1>
-        <TaskManager/>
+        <TodoList/>
       </div>
 
 
