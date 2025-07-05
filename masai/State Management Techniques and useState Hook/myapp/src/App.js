@@ -1,4 +1,5 @@
 import './App.css';
+import AttendanceManager from './components/AttendanceManager';
 import Counter from './components/Counter';
 import TaskManager from './components/TaskManager';
 import Todo from './components/Todo';
@@ -33,6 +34,12 @@ function App() {
           Basic Todo List App
         </h1>
         <TodoList/>
+      </div>
+      <div>
+        <h1>
+          Attendance Manager
+        </h1>
+        <AttendanceManager/>
       </div>
 
 
