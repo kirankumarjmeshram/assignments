@@ -1,4 +1,5 @@
 import './App.css';
+import Counter from './components/Counter';
 import TaskManager from './components/TaskManager';
 import Todo from './components/Todo';
 
@@ -18,6 +19,21 @@ function App() {
         </h1>
         <TaskManager/>
       </div>
+            <hr/>
+      <div>
+        <h1>
+          Simple Counter App
+        </h1>
+        <Counter/>
+      </div>
+            <hr/>
+      <div>
+        <h1>
+          Advanced Task Manager with Prioritization
+        </h1>
+        <TaskManager/>
+      </div>
+
 
      
 
