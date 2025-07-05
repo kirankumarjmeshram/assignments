@@ -3,6 +3,7 @@ import ControlledForm from './components/ControlledForm';
 import DynamicEmailForm from './components/DynamicEmailForm';
 import TaskList from './components/TaskList';
 import UncontrolledForm from './components/UncontrolledForm';
+import UserManagement from './components/UserManagement';
 
 function App() {
   return (
