@@ -1,5 +1,6 @@
 import './App.css';
 import ControlledForm from './components/ControlledForm';
+import DynamicEmailForm from './components/DynamicEmailForm';
 import UncontrolledForm from './components/UncontrolledForm';
 
 function App() {
@@ -21,8 +22,9 @@ function App() {
      <hr/>
      <div>
       <h1>
-        Controlled Form Basics
+        Dynamic Form Field Managemen
       </h1>
+      <DynamicEmailForm/>
      </div>
      <hr/>
      <div>
