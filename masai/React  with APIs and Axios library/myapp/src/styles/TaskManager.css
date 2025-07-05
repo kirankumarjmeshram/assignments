@@ -1,0 +1,60 @@
+.task-manager {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  font-family: Arial;
+}
+
+.add-task input, .add-task select {
+  padding: 6px;
+  margin-right: 8px;
+}
+
+button {
+  margin-left: 6px;
+  padding: 6px 10px;
+}
+
+.filters {
+  margin: 20px 0;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  padding: 8px 12px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  align-items: center;
+}
+
+.task-item span.priority {
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+/* Priority highlighting */
+.task-item.high {
+  border-left: 6px solid red;
+  background-color: #ffe6e6;
+}
+.task-item.medium {
+  border-left: 6px solid orange;
+  background-color: #fff3e0;
+}
+.task-item.low {
+  border-left: 6px solid green;
+  background-color: #e6ffe6;
+}
+
+/* Completed task styling */
+.task-item.completed span:first-child {
+  text-decoration: line-through;
+  color: gray;
+}
