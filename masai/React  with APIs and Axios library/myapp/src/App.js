@@ -37,8 +37,9 @@ function App() {
      <hr/>
            <div>
       <h1>
-         Debugging Axios Integration
+          Multi-User Data Management with Axios and Firebase
       </h1>
+      <UserManagement/>
      </div>
 
     </div>
