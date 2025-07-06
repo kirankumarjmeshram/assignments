@@ -1,4 +1,5 @@
 import './App.css';
+import QuoteGenerator from './components/QuoteGenerator';
 import ToggleTheme from './components/ToggleTheme';
 
 function App() {
@@ -11,6 +12,15 @@ function App() {
         <ToggleTheme/>
       </div>
       <hr/>
+      <div>
+        <h1>
+          Daily Quote Generator
+        </h1>
+        <QuoteGenerator/>
+      </div>
+      <hr/>
+
+      
     </div>
   );
 }
