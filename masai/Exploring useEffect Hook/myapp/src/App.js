@@ -1,6 +1,7 @@
 import './App.css';
 import QuoteGenerator from './components/QuoteGenerator';
 import ToggleTheme from './components/ToggleTheme';
+import UserList from './components/UserList';
 
 function App() {
   return (
@@ -19,6 +20,16 @@ function App() {
         <QuoteGenerator/>
       </div>
       <hr/>
+
+            <div>
+        <h1>
+          Fetch and Display User Profiles
+        </h1>
+        <UserList/>
+      </div>
+      <hr/>
+
+      
 
       
     </div>
